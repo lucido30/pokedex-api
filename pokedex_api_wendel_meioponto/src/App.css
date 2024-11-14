@@ -1,0 +1,78 @@
+.pokedex {
+  text-align: center;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pokemon-card {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 150px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.pokemon-image {
+  position: relative;
+}
+
+.pokemon-image img {
+  width: 100px;
+  height: 100px;
+}
+
+.ability-tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 110%;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  z-index: 10;
+}
+
+.pokemon-image:hover .ability-tooltip {
+  display: block;
+}
+
+.github-button {
+  background-color: #24292e;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.github-button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.github-button:before {
+  content: 'GitHub do PH';
+  margin-right: 8px;
+}
+
+.github-button i {
+  font-size: 18px;
+  margin-right: 8px;
+}
